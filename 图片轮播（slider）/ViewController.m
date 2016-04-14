@@ -114,10 +114,11 @@
     //滚动位置偏移量
     CGFloat offsetX = self.scrollView.contentOffset.x;
     int pageNumber = (offsetX + 0.5* self.scrollView.frame.size.width) / self.scrollView.frame.size.width;
-    
     NSLog(@"%d",pageNumber);
     self.pageControl.currentPage = pageNumber;
 }
+
+
 
 
 @end
